@@ -1,6 +1,9 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useContext } from "react";
+import { UserContext } from "../context/UserContext";
 
-export const UserForm = ({ handlerAddForm, initialUserForm, userSelected, handlerCloseForm }) => {
+export const UserForm = ({ userSelected, handlerCloseForm }) => {
+
+    const {initialUserForm, handlerAddForm} = useContext(UserContext);
 
     const [userForm, setUserForm] = useState(initialUserForm);
 
