@@ -5,7 +5,7 @@ import { UserContext } from "../context/UserContext"
 
 export const RegisterPage = () => {
 
-    const [users = [], initialUserForm] = useContext(UserContext);
+    const {users = [], initialUserForm} = useContext(UserContext);
 
     const [userSelected, setUserSelected] = useState(initialUserForm)
 
