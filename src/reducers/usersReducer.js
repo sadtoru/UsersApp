@@ -15,7 +15,7 @@ export const usersReducer = (state = [], action) => {
             return state.filter(user => user.id != action.payload);
         case 'updateUser':
             return state.map(u => {
-                if(u.id === action.payload.id){
+                if (u.id === action.payload.id) {
                     return {
                         ...action.payload,
                         password: u.password
@@ -23,6 +23,8 @@ export const usersReducer = (state = [], action) => {
                 }
                 return u;
             });
+        case 'loadingUsers':
+            return action.payload;
         default:
             return state;
     }

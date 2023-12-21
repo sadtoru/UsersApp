@@ -2,7 +2,7 @@ import { Navigate, Route, Routes } from "react-router-dom"
 import { UsersPage } from "../pages/UsersPage"
 import { Navbar } from "../components/layout/Navbar"
 import { RegisterPage } from "../pages/RegisterPage"
-import { UserProvider } from "./UserProvider"
+import { UserProvider } from "../context/UserProvider"
 
 export const UserRoutes = () => {
 

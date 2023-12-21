@@ -5,7 +5,7 @@ import { UserContext } from '../context/UserContext'
 
 export const UsersList = () => {
 
-    const { users = [] } = useContext(UserContext);
+    const { users } = useContext(UserContext);
 
     return (
 
